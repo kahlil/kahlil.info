@@ -1,13 +1,17 @@
 {
   "scripts": {
-    "start": "metalsmith"
+    "start": "metalsmith",
+    "clean": "trash build"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.1",
     "eslint-config-airbnb": "0.0.8",
     "esnow": "^1.0.16",
+    "handlebars": "^4.0.1",
     "metalsmith": "^2.0.1",
     "metalsmith-markdown": "^0.2.1",
-    "metalsmith-templates": "^0.7.0"
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-templates": "^0.7.0",
+    "trash": "^2.0.0"
   }
 }
