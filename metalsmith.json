@@ -1,10 +1,16 @@
 {
 	"metadata": {
-    "title": "My Blog",
-    "description": "My super-cool blog."
+    "title": "kahlil's blog."
   },
   "plugins": {
-    "metalsmith-markdown": {},
+		"metalsmith-collections": {
+      "articles": {
+        "sortBy": "date",
+        "reverse": true
+      }
+    },
+		"metalsmith-markdown": {},
+		"metalsmith-permalinks": {},
     "metalsmith-templates": {
       "engine": "handlebars"
     }

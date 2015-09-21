@@ -1,0 +1,74 @@
+html {
+  font-weight: 300;
+}
+
+
+/* Footer */
+footer {
+  padding-bottom: 1rem;
+}
+
+/* Images */
+.caption {
+  margin-bottom: 60px;
+}
+
+/* Icons */
+.icon {
+  fill: #333;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.2em;
+}
+
+header .icon,
+.contact .icon,
+.icons a:last-child .icon {
+  margin-right: 0em;
+}
+
+a:hover .icon {
+  fill: #D30C0C;
+}
+
+.icon-m {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: -1px;
+  margin-right: 0;
+}
+
+.svg-container {
+  display: none;
+}
+
+/* Util */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Grid adjustments.
+.container-fluid {
+}
+
+// Jumbotron
+.jumbotron h1 {
+  font-weight: 400;
+}
+.jumbotron__more-info {
+  padding-top: 2rem;
+}
+
+
+.post h1 {
+  font-family: $font-family-serif;
+}
