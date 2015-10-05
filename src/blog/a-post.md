@@ -2,14 +2,8 @@
 date: 2012-12-09
 template: post.html
 collection: articles
-title: this is the second title
+title: Use Babel for Browser Code with ESNow
 ---
 
-# This is the title2 asdf asdf askls f asdf aslkasdfl!!
-
-what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla
-what is going on bla what is going on bla what is going on bla what is going
-
-on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla
-what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla
-what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla what is going on bla
+ESNow is a node package that preconfigures Browserify with Babelify and Uglifyify so that you can easily write any
+code Babel knows how to transpile for the browser.

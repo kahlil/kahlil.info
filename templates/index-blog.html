@@ -34,14 +34,22 @@
 </head>
 
 <body>
-  <div class=".container">
+  <div class="container blog blog--index">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <h1>{{ title }}</h1>
+      <div class="col-md-8 col-md-offset-2">
+        <header class="blog-header">
+          <h1 class="blog-header__title">{{ sitetitle }}</h1>
+          <ul class="blog-header__nav nav">
+            <li role="presentation" class="active"><a href="/blog">Blog</a></li>
+            <li role="presentation"><a href="/">About</a></li>
+          </ul>
+        </header>
+
         {{#each collections.articles}}
-        <h3>
-          <a href="/{{path}}">{{title}}</a>
-        </h3>
+        <h2>
+          <a href="/{{path}}">{{ title }}</a>
+          <span class="date pull-right"><small>19th of Oct., 2015</small></span>
+        </h2>
         {{/each}}
       </div>
     </div>

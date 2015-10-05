@@ -27,7 +27,7 @@
 // @import "bootstrap/dropdowns";
 // @import "bootstrap/button-groups";
 // @import "bootstrap/input-groups";
-// @import "bootstrap/navs";
+@import "bootstrap/navs";
 // @import "bootstrap/navbar";
 // @import "bootstrap/breadcrumbs";
 // @import "bootstrap/pagination";
@@ -51,9 +51,10 @@
 // @import "bootstrap/popovers";
 // @import "bootstrap/carousel";
 
-// My custom classes
-@import "custom";
-
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+// My custom classes
+@import "modules/blog-header";
+@import "custom";

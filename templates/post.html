@@ -36,8 +36,16 @@
 <body>
   <div class="container">
     <div class="row">
-      <!-- <div class="col-md-2 col-md-offset-1">@kahliltweets</div> -->
-      <div class="col-md-6 col-md-offset-3 post">
+      <div class="col-md-2 back-link"><a href="/blog">⎋ Home</a></div>
+      <div class="col-md-8 post">
+        <!-- <header class="blog-header">
+          <h1 class="blog-header__title">{{ sitetitle }}</h1>
+          <ul class="blog-header__nav nav">
+            <li role="presentation" class="active"><a href="/blog">Blog</a></li>
+            <li role="presentation"><a href="/">About</a></li>
+          </ul>
+        </header> -->
+        <h1>{{ title }}</h1>
         {{{ contents }}}
       </div>
     </div>
