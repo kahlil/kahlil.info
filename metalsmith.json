@@ -1,6 +1,6 @@
 {
 	"metadata": {
-    "sitetitle": "Kahlil Lechelt"
+    "sitetitle": "kahlilblog"
   },
   "plugins": {
 		"metalsmith-collections": {
@@ -9,10 +9,16 @@
         "reverse": true
       }
     },
-		"metalsmith-markdown": {},
+		"metalsmith-markdown": {
+      "gfm": true,
+      "tables": true,
+      "breaks": true
+    },
 		"metalsmith-permalinks": {},
     "metalsmith-layouts": {
-      "engine": "handlebars"
+      "engine": "handlebars",
+      "directory": "layouts",
+      "partials": "layouts/partials"
     }
   }
 }

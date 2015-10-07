@@ -1,28 +1,33 @@
 {
   "scripts": {
-    "start": "metalsmith",
+    "start": "npm-run-all clean build:* --parallel watch serve",
     "clean": "trash build",
-    "serve": "http-server ./build -s -o",
-    "scss": "node-sass src/scss/main.scss -o build/css --include-path node_modules/bootstrap-sass/assets/stylesheets"
+    "serve": "live-server ./build",
+    "build:html": "metalsmith",
+    "build:scss": "node-sass src/scss/main.scss -o build/css --include-path node_modules/bootstrap-sass/assets/stylesheets",
+    "watch:scss": "chokidar 'src/scss/*/*.scss' -c 'npm run build:scss'",
+    "watch:html": "chokidar 'src/{,*/}*.{html,md}' 'layouts/*/*.html' -c 'npm run build:html'",
+    "watch": "npm-run-all --parallel watch:*"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.1",
     "bootstrap-sass": "^3.3.5",
+    "chokidar": "^1.2.0",
+    "chokidar-cli": "^1.0.1",
     "eslint-config-airbnb": "0.0.8",
     "esnow": "^1.0.16",
     "handlebars": "^4.0.1",
     "http-server": "^0.8.0",
+    "live-server": "^0.8.1",
     "metalsmith": "^2.0.1",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-layouts": "^1.4.1",
     "metalsmith-sass": "^1.3.0",
     "node-sass": "^3.3.2",
+    "npm-run-all": "^1.2.11",
     "rm": "^0.1.6",
     "trash": "^2.0.0"
-  },
-  "dependencies": {
-    "chokidar": "^1.2.0",
-    "metalsmith-layouts": "^1.4.1"
   }
 }

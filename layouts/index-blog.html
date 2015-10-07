@@ -1,0 +1,16 @@
+{{> html-head title="kahlilblog" }}
+{{> blog-header}}
+<div class="container blog blog--index">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      {{#each collections.articles}}
+      <h2>
+        <a href="/{{path}}">{{ title }}</a>
+        <span class="date pull-right"><small>19th of Oct., 2015</small></span>
+      </h2>
+      {{/each}}
+    </div>
+  </div>
+</div>
+{{> html-bottom }}
