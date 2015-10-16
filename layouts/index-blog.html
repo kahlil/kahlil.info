@@ -7,7 +7,7 @@
       {{#each collections.articles}}
       <h2>
         <a href="/{{path}}">{{ title }}</a>
-        <span class="date pull-right"><small>19th of Oct., 2015</small></span>
+        <span class="date pull-right"><small>{{ formatDate date "Do of MMM, YYYY" }}</small></span>
       </h2>
       {{/each}}
     </div>

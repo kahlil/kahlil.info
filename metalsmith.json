@@ -15,6 +15,9 @@
       "breaks": true
     },
 		"metalsmith-permalinks": {},
+    "metalsmith-register-helpers": {
+      "directory": "layouts/helpers"
+    },
     "metalsmith-layouts": {
       "engine": "handlebars",
       "directory": "layouts",
