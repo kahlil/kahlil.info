@@ -1,5 +1,5 @@
 ---
-date: 2015-10-16
+date: 2015-10-14
 layout: linkpost.html
 collection: articles
 title: "Descriptive 22: Building Abstractions That Aren't Ahistorical with Ashley Williams"
