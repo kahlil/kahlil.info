@@ -3,7 +3,7 @@ body {
 }
 
 html {
-  font-weight: 300;
+  font-weight: normal;
   position: relative;
   min-height: 100%;
 }
@@ -70,10 +70,10 @@ a:hover .icon {
 // Jumbotron
 .jumbotron {
   p {
-    font-weight: 300;
+    font-weight: 400;
   }
   h1 {
-    font-weight: 300;
+    font-weight: 600;
   }
 }
 .jumbotron__more-info {
