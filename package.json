@@ -12,7 +12,8 @@
     "rsync:stage": "rsync -rv ./build/ kahlil@helium.uberspace.de:/var/www/virtual/kahlil/stage.kahlil.info",
     "rsync:live": "rsync -rv --delete ./build/ kahlil@helium.uberspace.de:/var/www/virtual/kahlil/kahlil.info",
     "deploy:stage": "npm-run-all clean build rsync:stage",
-    "deploy:live": "npm-run-all clean build rsync:live"
+    "deploy:live": "npm-run-all clean build rsync:live",
+    "gh-pages": "git subtree push --prefix build origin gh-pages"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
